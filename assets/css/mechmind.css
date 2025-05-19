@@ -1,0 +1,30 @@
+:root {
+    --mechmind-primary: #FF00FF;
+    --mechmind-bg: #0D1117;
+}
+
+body {
+    background: var(--mechmind-bg);
+    font-family: 'Courier New', monospace;
+}
+
+.cyber-terminal {
+    border: 2px dashed var(--mechmind-primary);
+    padding: 2rem;
+    margin: 5% auto;
+    max-width: 800px;
+}
+
+.cyber-button {
+    background: black;
+    color: var(--mechmind-primary);
+    border: 1px solid;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cyber-button:hover {
+    text-shadow: 0 0 10px var(--mechmind-primary);
+    box-shadow: 0 0 20px var(--mechmind-primary);
+}
