@@ -1,0 +1,6 @@
+// ¡Mensaje de éxito!
+fn main() {
+    println!("🎉 ¡Sitio desplegado con éxito!");
+    println!("🌐 Visita: https://mechmind-dwv.github.io");
+    println!("🤖 Recuerda: Grandes poderes requieren grandes commits");
+}
