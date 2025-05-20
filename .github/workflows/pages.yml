@@ -14,7 +14,8 @@ jobs:
         run: |
           echo "🤖 Construyendo sitio MechMind..."
           mkdir -p public
-          cp -r * public/
+          shopt -s extglob
+          cp -r !(public|.git|.github) public/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
