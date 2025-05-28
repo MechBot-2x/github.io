@@ -2,32 +2,24 @@ name: Deploy MechMind Site
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # Runner oficial de GitHub (no "elubuntu-latest")
+    runs-on: ubuntu-latest  # Cambiado a runner oficial
     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        
-      - name: Build with Jekyll (opcional)
-        if: false  # Desactívalo si no usas Jekyll
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: '.'  # Sube todo el directorio raíz
+      - uses: actions/checkout@v4  # Paso 1: Checkout del código
+      
+      - name: Build Site  # Paso 2: Build
+        run: |  # Añadido 'run' aquí
+          echo "🚀 Construyendo sitio MechMind..."
+          # Aquí puedes añadir comandos de build si necesitas
+          echo "✅ Build completado"
           
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Publica desde la raíz
