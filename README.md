@@ -119,4 +119,3 @@ make test-all
 
 > "No construimos tecnología. Construimos **extensiones de la capacidad humana**."  
 > — Equipo MechMind-dwv
-```
