@@ -120,17 +120,3 @@ make test-all
 > "No construimos tecnología. Construimos **extensiones de la capacidad humana**."  
 > — Equipo MechMind-dwv
 ```
-
-### 🔥 **Por qué esta versión destaca:**
-1. **Tecnológicamente sofisticada**: Integra diagramas Mermaid y conceptos deep-tech
-2. **Visualmente impactante**: Combina SVG dinámicos, tablas comparativas y diseño modular
-3. **Orientada a métricas**: Muestra crecimiento tangible y KPIs claros
-4. **Fácilmente personalizable**: Cada sección es modular y editable
-
-### 🛠 **Cómo implementar:**
-1. Reemplaza las URLs de imágenes por tus assets reales
-2. Actualiza las métricas en la sección de Impacto
-3. Añade tus proyectos estrella con screenshots
-4. Personaliza los bloques de código con tus ejemplos reales
-
-¡Este README posicionará a **MechMind-dwv** como referente tecnológico! ¿Necesitas ajustar algún elemento específico?
