@@ -1,5 +1,4 @@
-
-# STRUCTURA
+```
 mechmind-dwv.github.io/
 ├── index.html          # Página principal con efecto robótico
 ├── _config.yml         # Configuración personalizada
@@ -8,3 +7,4 @@ mechmind-dwv.github.io/
 │   └── js/particles.js   # Efectos visuales
 └── .github/workflows/
     └── pages.yml       # Deployment automático
+```
