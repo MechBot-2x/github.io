@@ -1,0 +1,5 @@
+graph LR
+  A[Rust] --> B[Automatización]
+  C[Python] --> D[IA/ML]
+  E[WASM] --> F[Web HPC]
+  G[ROS2] --> H[Robótica]
