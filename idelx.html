@@ -2,23 +2,89 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>MechMind-dwv | 🤖 + 🧑‍🚀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MechMind-dwv | 🤖 Ingeniería Robótica</title>
     <link rel="stylesheet" href="assets/css/mechmind.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
 <body>
     <div class="cyber-terminal">
-        <h1>¡Hola Mundo! 👾</h1>
-        <pre id="typewriter">
-            <span class="type">$ git commit -m "Iniciando sitio épico"</span>
-            <span class="type">$ cargo build --release</span>
-            <span class="type">> Inicializando MechBot...</span>
-        </pre>
-        <div class="grid">
-            <a href="https://github.com/mechmind-dwv" class="cyber-button">Ver Perfil</a>
-            <a href="https://mechmind-dwv.github.io/mechbot" class="cyber-button">Proyecto Estrella</a>
+        <div class="terminal-header">
+            <span class="terminal-title">MechMind-dwv@github:~$</span>
+        </div>
+        
+        <div class="terminal-content">
+            <h1 class="cyber-title">🤖 MechMind-dwv</h1>
+            <p class="cyber-subtitle">Ingeniería que redefine límites</p>
+            
+            <pre id="typewriter" class="terminal-output">
+<span class="type" data-delay="0">$ git status</span>
+<span class="type" data-delay="1000">On branch main</span>
+<span class="type" data-delay="2000">$ cargo build --release</span>
+<span class="type" data-delay="3000">🚀 Compilando MechBot v3.0...</span>
+<span class="type" data-delay="4000">✅ Sistema robótico inicializado</span>
+<span class="type" data-delay="5000">🧠 IA generativa: ACTIVA</span>
+<span class="type" data-delay="6000">🌐 Conexión establecida</span>
+            </pre>
+            
+            <div class="button-grid">
+                <a href="https://github.com/mechmind-dwv" class="cyber-button primary">
+                    📂 Ver Repositorios
+                </a>
+                <a href="#tech-stack" class="cyber-button secondary">
+                    🛠️ Tech Stack
+                </a>
+                <a href="#projects" class="cyber-button accent">
+                    🚀 Proyectos
+                </a>
+            </div>
         </div>
     </div>
+    
+    <section id="tech-stack" class="tech-section">
+        <h2>🧩 Stack Tecnológico</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <span class="tech-icon">🦀</span>
+                <span class="tech-name">Rust</span>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🐍</span>
+                <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🤖</span>
+                <span class="tech-name">ROS2</span>
+            </div>
+            <div class="tech-item">
+                <span class="tech-icon">🧠</span>
+                <span class="tech-name">AI/ML</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects-section">
+        <h2>🚀 Proyectos Destacados</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>MechBot 3.0</h3>
+                <p>Sistema robótico autónomo con IA integrada</p>
+                <a href="https://github.com/mechmind-dwv/mechbot-3x" class="project-link">Ver Proyecto →</a>
+            </div>
+            <div class="project-card">
+                <h3>Neural Nexus</h3>
+                <p>Plataforma de IA distribuida para edge computing</p>
+                <a href="https://github.com/mechmind-dwv/neural-nexus" class="project-link">Ver Proyecto →</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="cyber-footer">
+        <p>"No construimos tecnología. Construimos extensiones de la capacidad humana."</p>
+        <p>— Equipo MechMind-dwv</p>
+    </footer>
+    
     <canvas id="particles"></canvas>
-    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/mechmind.js"></script>
 </body>
 </html>
