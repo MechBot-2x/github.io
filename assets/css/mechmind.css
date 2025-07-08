@@ -1,30 +1,271 @@
+/* Variables CSS */
 :root {
-    --mechmind-primary: #FF00FF;
+    --mechmind-primary: #00D4FF;
+    --mechmind-secondary: #FF00FF;
+    --mechmind-accent: #00FF88;
     --mechmind-bg: #0D1117;
+    --mechmind-surface: #161B22;
+    --mechmind-text: #E6EDF3;
+    --mechmind-border: #30363D;
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: var(--mechmind-bg);
-    font-family: 'Courier New', monospace;
+    color: var(--mechmind-text);
+    font-family: var(--font-mono);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
+/* Terminal principal */
 .cyber-terminal {
-    border: 2px dashed var(--mechmind-primary);
+    border: 2px solid var(--mechmind-primary);
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 900px;
+    background: var(--mechmind-surface);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.terminal-header {
+    background: var(--mechmind-border);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--mechmind-primary);
+    display: flex;
+    align-items: center;
+}
+
+.terminal-title {
+    color: var(--mechmind-primary);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.terminal-content {
     padding: 2rem;
-    margin: 5% auto;
-    max-width: 800px;
+}
+
+.cyber-title {
+    font-size: 2.5rem;
+    color: var(--mechmind-primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px var(--mechmind-primary);
+}
+
+.cyber-subtitle {
+    text-align: center;
+    color: var(--mechmind-accent);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Efecto typewriter */
+.terminal-output {
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--mechmind-border);
+    margin: 2rem 0;
+    min-height: 200px;
+    font-size: 0.9rem;
+}
+
+.type {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Botones */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .cyber-button {
-    background: black;
+    background: transparent;
     color: var(--mechmind-primary);
-    border: 1px solid;
+    border: 2px solid var(--mechmind-primary);
     padding: 1rem 2rem;
     text-decoration: none;
-    transition: all 0.3s;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font-mono);
+    font-weight: bold;
 }
 
 .cyber-button:hover {
-    text-shadow: 0 0 10px var(--mechmind-primary);
+    color: var(--mechmind-bg);
+    background: var(--mechmind-primary);
+    text-shadow: none;
     box-shadow: 0 0 20px var(--mechmind-primary);
+    transform: translateY(-2px);
+}
+
+.cyber-button.secondary {
+    border-color: var(--mechmind-secondary);
+    color: var(--mechmind-secondary);
+}
+
+.cyber-button.secondary:hover {
+    background: var(--mechmind-secondary);
+    box-shadow: 0 0 20px var(--mechmind-secondary);
+}
+
+.cyber-button.accent {
+    border-color: var(--mechmind-accent);
+    color: var(--mechmind-accent);
+}
+
+.cyber-button.accent:hover {
+    background: var(--mechmind-accent);
+    box-shadow: 0 0 20px var(--mechmind-accent);
+}
+
+/* Secciones */
+.tech-section, .projects-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tech-section h2, .projects-section h2 {
+    text-align: center;
+    color: var(--mechmind-primary);
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.tech-item {
+    background: var(--mechmind-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--mechmind-border);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    border-color: var(--mechmind-primary);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.tech-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.tech-name {
+    font-size: 1.2rem;
+    color: var(--mechmind-primary);
+    font-weight: bold;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--mechmind-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--mechmind-border);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--mechmind-accent);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: var(--mechmind-accent);
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    color: var(--mechmind-primary);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.project-link:hover {
+    text-shadow: 0 0 10px var(--mechmind-primary);
+}
+
+/* Footer */
+.cyber-footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--mechmind-border);
+    margin-top: 4rem;
+    color: var(--mechmind-text);
+    font-style: italic;
+}
+
+/* Canvas de partículas */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cyber-terminal {
+        margin: 1rem;
+        border-radius: 4px;
+    }
+    
+    .terminal-content {
+        padding: 1rem;
+    }
+    
+    .cyber-title {
+        font-size: 2rem;
+    }
+    
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-grid, .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
