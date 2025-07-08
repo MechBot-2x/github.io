@@ -1,2 +1,30 @@
+# Configuración Jekyll para MechMind-dwv
+title: "MechMind-dwv | Ingeniería Robótica"
+description: "Plataforma central de robótica e IA generativa"
+url: "https://mechmind-dwv.github.io"
+baseurl: ""
+
+# Tema y plugins
 theme: jekyll-theme-minimal
-plugins: [jekyll-feed]
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Configuración de construcción
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Excluir archivos del build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - .github
