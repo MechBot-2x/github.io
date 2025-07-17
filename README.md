@@ -7,9 +7,9 @@
 **Plataforma central de MechMind-dwv** | Combinamos *hardware inteligente*, *software de vanguardia* y *IA generativa* para soluciones disruptivas.
 
 <div align="center">
-  <a href="https://mechmind-dwv.github.io"><img src="https://img.shields.io/badge/🚀_Demo_Activa-00D4FF?style=for-the-badge&logo=vercel" alt="Live Demo"/></a>
-  <a href="https://github.com/MechMind-dwv"><img src="https://img.shields.io/badge/💻_Código_Abierto-181717?style=for-the-badge&logo=github" alt="Open Source"/></a>
-  <img src="https://dcbadge.vercel.app/api/shield/78910111213141516?style=for-the-badge&theme=clean" alt="Discord Community"/>
+  <a href="https://mechbot-2x.github.io/mechmind-dwv.github.io"><img src="https://img.shields.io/badge/🚀_Demo_Activa-00D4FF?style=for-the-badge&logo=vercel" alt="Live Demo"/></a>
+  <a href="https://github.com/MechBot-2x"><img src="https://img.shields.io/badge/💻_Código_Abierto-181717?style=for-the-badge&logo=github" alt="Open Source"/></a>
+  <img src="https://img.shields.io/badge/🔥_Status-Activo-brightgreen?style=for-the-badge" alt="Active Status"/>
 </div>
 
 ---
@@ -36,11 +36,12 @@ graph LR
 
 ## **🚀 Proyectos Flagship**
 
-<div class="grid" align="center">
+<div align="center">
 
-| [<img src="https://i.imgur.com/3QfTixz.png" width=300>](https://github.com/MechMind-dwv/mechbot-3x)<br>**MechBot 3.0** | [<img src="https://i.imgur.com/v5GH7Xp.png" width=300>](https://github.com/MechMind-dwv/neural-nexus)<br>**Neural Nexus** |
-|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| *Sistema robótico autónomo con GPT-4o integrado*                                                                        | *Plataforma de IA distribuida para edge computing*                                                                       |
+| **MechBot 3.0** | **Neural Nexus** |
+|-----------------|------------------|
+| *Sistema robótico autónomo con GPT-4o integrado* | *Plataforma de IA distribuida para edge computing* |
+| [![MechBot](https://img.shields.io/badge/Estado-Desarrollo-yellow)](https://github.com/MechBot-2x/mechbot-3x) | [![Neural](https://img.shields.io/badge/Estado-Beta-orange)](https://github.com/MechBot-2x/neural-nexus) |
 
 </div>
 
@@ -72,22 +73,25 @@ class CyberneticController:
 ## **🌐 Ecosistema Digital**
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MechMind-dwv/branding/main/ecosystem-map.png" width="600" alt="Arquitectura del Ecosistema"/>
+  <img src="https://raw.githubusercontent.com/MechBot-2x/mechmind-dwv.github.io/main/branding/main/ecosystem-map.png" width="600" alt="Arquitectura del Ecosistema"/>
 </div>
 
 ---
 
 ## **📌 Cómo Contribuir**
 
-1. **Revisa nuestro** [Tech Radar](https://mechmind-dwv.github.io/tech-radar) para alineación tecnológica
-2. **Explora** [issues con tag "Good First Issue"](https://github.com/MechMind-dwv/mechmind-dwv.github.io/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
-3. **Sigue nuestro** [Protocolo de Merge Requests](https://github.com/MechMind-dwv/.github/blob/main/PULL_REQUEST_TEMPLATE.md)
+1. **Revisa nuestros** [issues abiertos](https://github.com/MechBot-2x/mechmind-dwv.github.io/issues)
+2. **Explora** issues con tag "Good First Issue"
+3. **Sigue nuestro** flujo de desarrollo
 
 ```bash
 # Flujo de desarrollo estándar
-git clone --recurse-submodules https://github.com/MechMind-dwv/core-system.git
-make setup
-make test-all
+git clone https://github.com/MechBot-2x/mechmind-dwv.github.io.git
+cd mechmind-dwv.github.io
+git checkout -b feature/tu-feature
+# Desarrolla tu feature
+git commit -m "feat: add amazing feature"
+git push origin feature/tu-feature
 ```
 
 ---
@@ -106,6 +110,22 @@ make test-all
 
 ---
 
+## **🔧 Instalación Rápida**
+
+```bash
+# Clona el repositorio
+git clone https://github.com/MechBot-2x/mechmind-dwv.github.io.git
+cd mechmind-dwv.github.io
+
+# Instala dependencias (si las hay)
+npm install
+
+# Ejecuta localmente
+npm start
+```
+
+---
+
 ## **✨ Elementos Destacables**
 
 1. **Dynamic Badges** - Actualización automática de métricas
@@ -115,22 +135,24 @@ make test-all
 
 ---
 
-<img src="https://raw.githubusercontent.com/MechMind-dwv/branding/main/footer-wave.svg" width="100%"/>
+## **📞 Contacto**
+
+- **Email**: ia.mechmin@gmail.com
+- **GitHub**: [@MechBot-2x](https://github.com/MechBot-2x)
+- **Website**: [mechmind-dwv.github.io](https://mechbot-2x.github.io/mechmind-dwv.github.io)
+
+---
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MechBot-2x/mechmind-dwv.github.io/main/assets/footer-wave.svg" width="100%" alt="Footer Wave"/>
+</div>
 
 > "No construimos tecnología. Construimos **extensiones de la capacidad humana**."  
 > — Equipo MechMind-dwv
-```
 
-### 🔥 **Por qué esta versión destaca:**
-1. **Tecnológicamente sofisticada**: Integra diagramas Mermaid y conceptos deep-tech
-2. **Visualmente impactante**: Combina SVG dinámicos, tablas comparativas y diseño modular
-3. **Orientada a métricas**: Muestra crecimiento tangible y KPIs claros
-4. **Fácilmente personalizable**: Cada sección es modular y editable
+---
 
-### 🛠 **Cómo implementar:**
-1. Reemplaza las URLs de imágenes por tus assets reales
-2. Actualiza las métricas en la sección de Impacto
-3. Añade tus proyectos estrella con screenshots
-4. Personaliza los bloques de código con tus ejemplos reales
-
-¡Este README posicionará a **MechMind-dwv** como referente tecnológico! ¿Necesitas ajustar algún elemento específico?
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=MechBot-2x&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views"/>
+  <img src="https://img.shields.io/github/stars/MechBot-2x/mechmind-dwv.github.io?style=social" alt="GitHub Stars"/>
+</div>
